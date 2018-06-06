@@ -16,8 +16,9 @@ public class SubFragment2 extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View fragmentView = inflater.inflate(R.layout.subfragment2, container, false);
 
-        Log.d("FRAG", "SubFragment2 Fragment Manager:" + getFragmentManager().toString());
-
+        Log.d("SubFragment2", "SubFragment2 Fragment Manager: " + getFragmentManager().toString()); // can also use this one
+//        Log.d("SubFragment2", "SubFragment2 Child Fragment Manager: " + getChildFragmentManager().toString()); // do not use
+        Log.d("SubFragment2", "SubFragment2 Require Fragment Manager: " + requireFragmentManager().toString()); // this one is best
 
         return fragmentView;
     }

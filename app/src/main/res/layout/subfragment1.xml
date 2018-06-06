@@ -9,7 +9,4 @@
         android:layout_height="wrap_content"
         android:text="Sub Fragment 1"/>
 
-
-
-
 </LinearLayout>
