@@ -5,6 +5,7 @@ import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -23,6 +24,8 @@ public class Fragment1 extends Fragment {
             @Override
             public void onClick(View v) {
                 FragmentTransaction ft = getFragmentManager().beginTransaction();
+
+                Log.d("FRAG", "Fragment1 Fragment Manager:" + getFragmentManager().toString());
 
                 DialogFragment1 dialogFragment1 = new DialogFragment1();
                 dialogFragment1.setTargetFragment(Fragment1.this, 1);

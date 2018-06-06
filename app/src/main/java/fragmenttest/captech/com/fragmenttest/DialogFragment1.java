@@ -6,6 +6,7 @@ import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.DialogFragment;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -45,6 +46,9 @@ public class DialogFragment1 extends DialogFragment {
                 setActiveInactive(tab2, tab1);
             }
         });
+
+
+        Log.d("FRAG", "Dialog Fragment Manager:" + getFragmentManager().toString());
 
         closeButton.setOnClickListener(new View.OnClickListener() {
             @Override

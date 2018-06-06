@@ -3,6 +3,7 @@ package fragmenttest.captech.com.fragmenttest;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.util.Log;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -43,6 +44,8 @@ public class MainActivity extends AppCompatActivity
 
         Fragment1 fragment1 = new Fragment1();
         getSupportFragmentManager().beginTransaction().replace(R.id.main_activity_content, fragment1).commit();
+
+        Log.d("FRAG", "Main Activity Fragment Manager:" + getSupportFragmentManager().toString());
     }
 
     @Override
